@@ -7,18 +7,31 @@
 
 \documentclass[a4paper,20pt]{article}
 
-\include{sources/settings}
+\input{sources/settings}
 
 \begin{document}
+\input{sources/sections/heading}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Jonas Hübotter}}\\
-  \href{https://github.com/jonhue}{Github: ~~github.com/jonhue} & Email: \href{mailto:}{jonas.huebotter@gmail.com} \\
-  \href{https://jonhue.github.io}{Portfolio: jonhue.github.io} & Mobile:~~~~~~~~~~~~~~\,+41 79 287 04 02 \\
-\end{tabular*}
+%-----------EDUCATION-----------------
+\vspace{-5pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ETH Zurich}{Zurich, Switzerland}
+      {M.Sc. Computer Science}{since 2021}
+      {\scriptsize \textit{ \footnotesize{\newline{}Theoretical Computer Science (Major) and Machine Learning (Minor)}}}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical University Munich}{Munich, Germany}
+      {B.Sc. Computer Science; GPA: 1.4 (passed with distinction)}{2018 - 2021}
+      {\scriptsize \textit{ \footnotesize{\newline{}Computer Science (Major) and Mathematics (Minor)}
+      \footnotesize{\newline{}\textbf{Thesis} on Algorithms for Smoothed Online Convex Optimization, also known as Convex Function Chasing or Convex Body Chasing.}}}
+    \resumeSubHeadingListEnd
 
-\section{Experience}
+\vspace{-5pt}
+\section{Professional Experience}
   \resumeSubHeadingListStart
     \resumeSubheading{Uncountable (R\&D Platform)}{Munich, Germany}
     {Data Engineer (Part-time)}{April 2020 - July 2021}
@@ -38,64 +51,51 @@
         \resumeItem{Scalability}
           {Worked on route planning algorithms and data organization supporting timely delivery of hundreds of thousands of shipments a month.}
 		\resumeItemListEnd
-    \resumeSubheading
-		{City of Puchheim (Interactive Games facilitating Garbage Separation)}{Munich, Germany}
-		{Project Co-Lead (Contractual)}{2020}
-		\resumeItemListStart
-        \resumeItem{Leading}{the design \& development of an app focusing on interactive games designed to familiarize kids with garbage separation and its environmental impact.}
-		\resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------------
 \vspace{-5pt}
-\section{Education}
+\section{Teaching}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {ETH Zurich}{Zurich, Switzerland}
-      {M.Sc. Computer Science}{since 2021}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Probabilistic Artificial Intelligence, Algorithms Lab, Randomized Algorithms and Probabilistic Methods}
-      \footnotesize{\newline{}\textbf{Teaching Assistant:} Algorithms \& Probability (undergraduate) and Probabilistic Artificial Intelligence (graduate)}}}
-    \resumeSubHeadingListEnd
+    \resumeSubheading{Probabilistic Artificial Intelligence}{ETH Zurich}
+    {Teaching Assistant, graduate}{2022}
+    \vspace{-5pt}
+    \resumeSubheading{Algorithms and Probability}{ETH Zurich}
+    {Teaching Assistant, undergraduate}{2022}
+    \vspace{-5pt}
+    \resumeSubheading{Theory of Computation}{TUM}
+    {Teaching Assistant, undergraduate}{2021}
+    \vspace{-5pt}
+    \resumeSubheading{Discrete Probability Theory}{TUM}
+    {Teaching Assistant, undergraduate}{2021}
+    \vspace{-5pt}
+    \resumeSubheading{Functional Programming and Verification}{TUM}
+    {Teaching Assistant, undergraduate}{2021}
+    \vspace{-5pt}
+    \resumeSubheading{Discrete Probability Theory}{TUM}
+    {Designing and Teaching the Revision Course, undergraduate}{2020}
+    \vspace{-5pt}
+    \resumeSubheading{Functional Programming and Verification}{TUM}
+    {Designing and Teaching the Revision Course, undergraduate}{2020}
+\resumeSubHeadingListEnd
+
 \vspace{-5pt}
+\section{Papers and Talks}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Technical University Munich}{Munich, Germany}
-      {B.Sc. Computer Science; GPA: 1.4 (passed with distinction)}{2018 - 2021}
-      {\scriptsize \textit{
-      \footnotesize{\newline{}\textbf{Thesis} on Algorithms for Smoothed Online Convex Optimization, useful for resource allocation, contextual sequence prediction, portfolio management, and object tracking.} \footnotesize{\newline{}\textbf{Courses:} Algorithms \& Data Structures, Artificial Intelligence, Quantitative Verification, Modeling and Simulation, Operations Research}
-      \footnotesize{\newline{}\textbf{Teaching Assistant:} Functional Programming and Verification, Discrete Probability Theory, Theory of Computation (all undergraduate)}}}
-    \resumeSubHeadingListEnd
+    \resumeSubItem{Deterministic Algorithms for the Lovász Local Lemma}{Jonas Hübotter and Duri Janett. Randomized Algorithms and Probabilistic Methods Seminar. \href{https://jonhue.github.io/lovasz-local-lemma-deterministic-algorithms/slides.pdf}{PDF}. Zurich, 2022.}
+    \resumeSubItem{Probabilistic Social Choice}{Jonas Hübotter. Computational Social Choice Seminar. \href{https://jonhue.github.io/probabilistic-social-choice/slides_handout.pdf}{PDF}. Zurich, 2021.}
+    \resumeSubItem{Implementation of Algorithms for Right-Sizing Data Centers}{Jonas Hübotter. Bachelor's Thesis. \href{https://jonhue.github.io/soco/main.pdf}{PDF}. Munich, 2021.}
+    \resumeSubItem{On Sorting by Reversals}{Jonas Hübotter. Approximation Algorithms Seminar. PDF (\href{https://jonhue.github.io/min-sbr/paper.pdf}{Paper}/\href{https://jonhue.github.io/min-sbr/slides_handout.pdf}{Slides}). Munich, 2020.}
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \vspace{-5pt}
-\section{Key Projects}
+\section{Projects}
 \resumeSubHeadingListStart
 \resumeSubItem{Lecture notes on Probabilistic Artificial Intelligence (Writing, Teaching)}{Some of the covered topics are Bayesian Learning, Gaussian Processes, Approximate Inference, Bayesian Deep Learning, Bayesian optimization, Active Learning, Markov Decision Processes, and Reinforcement Learning. ('22)}
-\vspace{2pt}
-\resumeSubItem{Open-source libraries}{I created multiple NPM and Ruby libraries that collectively have been downloaded for well over a million times. (since '16)}
 \vspace{2pt}
 \resumeSubItem{Type Inference of TypeScript}{I contributed numerous improvements to TypeScript's type inference algorithm, which satisfied the strong requirements for external contributions. These included stronger type inference, stricter type checks, and more accurate error messages. (Nov '20 - Feb '21)}
 \vspace{2pt}
 \resumeSubItem{Functional, strongly typed, high-level programming language (Parsing, Type Inference, Transpilation)}{I implemented a programming language from scratch with a focus on type inference innovations. (Feb '19 - Feb '21)}
-\vspace{2pt}
-\resumeSubItem{Serverless media streaming app (Web Development, Data Organization)}{I created an app that integrates with cloud providers such as OneDrive or FTP servers to stream media. The media is enriched with metadata from other third-parties. Technology: TypeScript, React, Redux, on-device storage, REST APIs. ('19)}
-\vspace{2pt}
-\resumeSubItem{Static site generated from CMS (Web Development, Automization)}{I built a company website that is static (so lightning fast!), but dynamically generated from a CMS. This might not sound like a big achievement, but I build it such that it incurs \emph{zero} monthly maintenance costs. Technology: TypeScript, Gatsby (hosted on GitHub Pages with GitHub Actions), Strapi (hosted on Heroku), GraphQL. (Mar '21)}
-\resumeSubHeadingListEnd
-
-\vspace{-5pt}
-\section{Skills Summary}
-\textbf{Key skills:} \emph{designing} algorithms and tech stacks, \emph{understanding} and efficiently \emph{organizing} data, \emph{automatization}, working with significant \emph{legacy code}.
-\vspace{2pt}
-
-I like to challenge myself/be challenged, so the following are merely an excerpt of the technologies/skills that I have used and acquired along the way.
-\vspace{-5pt}
-\resumeSubHeadingListStart
-\resumeSubItem{Languages}{~~~~~~Python, TypeScript, Rust, C++, Java, Ruby}
-\resumeSubItem{Frameworks}{~~~\,PyTorch, Numpy, SciKit, React, Redux, Gatsby, NodeJS, Rails, Flask}
-\resumeSubItem{Tools}{~~~~~~~~~~~~~\,Docker, Git, GitHub Actions, PostgreSQL, MongoDB}
-\resumeSubItem{Soft Skills}{~~~~~~Teaching, Writing, Leadership, Time Management, Public Speaking}
 \resumeSubHeadingListEnd
 
 %-----------Awards-----------------
