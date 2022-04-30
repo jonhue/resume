@@ -1,8 +1,8 @@
 ---
 layout: pubtex
-title: Jonas Hübotter's Curriculum Vitae
+title: Jonas Hübotter's Resume
 ---
 
-# My Curriculum Vitae
+# My Resume
 
 Versions: [Academic](https://jonhue.github.io/resume/academic.pdf), [Professional](https://jonhue.github.io/resume/professional.pdf)
