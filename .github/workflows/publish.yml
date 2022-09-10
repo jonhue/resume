@@ -14,5 +14,5 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           files: |
-            sources/academic.tex
-            sources/professional.tex
+            academic.tex
+            professional.tex
