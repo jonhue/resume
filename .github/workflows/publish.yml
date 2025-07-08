@@ -16,3 +16,4 @@ jobs:
           files: |
             academic.tex
             professional.tex
+            short.tex
